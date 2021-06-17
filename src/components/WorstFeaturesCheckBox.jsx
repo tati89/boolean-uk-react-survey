@@ -1,4 +1,4 @@
-function WorstFeaturesCheckBox({ answers, handleChange }) {
+function WorstFeaturesCheckBox({ answers, handleFeaturesValues }) {
   return (
     <ul>
       <li>
@@ -8,6 +8,7 @@ function WorstFeaturesCheckBox({ answers, handleChange }) {
             type="checkbox"
             value="colour"
             checked={answers.worstFeatures.includes("colour")}
+            onChange={handleFeaturesValues}
           />
           Swimming
         </label>
@@ -19,6 +20,7 @@ function WorstFeaturesCheckBox({ answers, handleChange }) {
             type="checkbox"
             value="sound"
             checked={answers.worstFeatures.includes("sound")}
+            onChange={handleFeaturesValues}
           />
           Bathing
         </label>
@@ -30,6 +32,7 @@ function WorstFeaturesCheckBox({ answers, handleChange }) {
             type="checkbox"
             value="logo"
             checked={answers.worstFeatures.includes("logo")}
+            onChange={handleFeaturesValues}
           />
           Chatting
         </label>
@@ -41,6 +44,7 @@ function WorstFeaturesCheckBox({ answers, handleChange }) {
             type="checkbox"
             value="size"
             checked={answers.worstFeatures.includes("size")}
+            onChange={handleFeaturesValues}
           />
           I don't like to spend time with it
         </label>

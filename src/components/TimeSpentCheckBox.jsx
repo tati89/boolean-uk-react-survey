@@ -1,4 +1,4 @@
-function TimeSpentCheckBox({ answers, handleChange }) {
+function TimeSpentCheckBox({ answers, handleFeaturesValues }) {
   return (
     <ul>
       <li>
@@ -7,7 +7,8 @@ function TimeSpentCheckBox({ answers, handleChange }) {
             name="timeSpent"
             type="checkbox"
             value="swimming"
-            checked={answers.worstFeatures.includes("swimming")}
+            checked={answers.timeSpent.includes("swimming")}
+            onChange={handleFeaturesValues}
           />
           Swimming
         </label>
@@ -18,7 +19,8 @@ function TimeSpentCheckBox({ answers, handleChange }) {
             name="timeSpent"
             type="checkbox"
             value="bathing"
-            checked={answers.worstFeatures.includes("bathing")}
+            checked={answers.timeSpent.includes("bathing")}
+            onChange={handleFeaturesValues}
           />
           Bathing
         </label>
@@ -29,7 +31,8 @@ function TimeSpentCheckBox({ answers, handleChange }) {
             name="timeSpent"
             type="checkbox"
             value="chatting"
-            checked={answers.worstFeatures.includes("chatting")}
+            checked={answers.timeSpent.includes("chatting")}
+            onChange={handleFeaturesValues}
           />
           Chatting
         </label>
@@ -40,7 +43,8 @@ function TimeSpentCheckBox({ answers, handleChange }) {
             name="timeSpent"
             type="checkbox"
             value="timespent"
-            checked={answers.worstFeatures.includes("timespent")}
+            checked={answers.timeSpent.includes("timespent")}
+            onChange={handleFeaturesValues}
           />
           I don't like to spend time with it
         </label>
